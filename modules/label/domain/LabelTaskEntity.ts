@@ -1,7 +1,7 @@
-import { Entity, EntityId } from '../../shared/Entity';
+import { Entity, EntityID } from '../../shared/core/Entity';
+import { TimeValueObject } from '../../shared/TimeValueObject';
 import { LabelTaskStatusValueObject } from './LabelTaskStatusValueObject';
 import { LabelTaskStepCostValueObject } from './LabelTaskStepCostValueObject';
-import { TimeValueObject } from './TimeValueObject';
 
 export interface LabelTaskEntityProps {
   date: string; // 业务日期
@@ -42,11 +42,11 @@ export class LabelTaskEntity extends Entity<LabelTaskEntityProps> {
     return this.props.errMsg;
   }
 
-  private constructor(id: EntityId, props: LabelTaskEntityProps) {
+  private constructor(id: EntityID, props: LabelTaskEntityProps) {
     super(id, props);
   }
 
-  static create(id: EntityId, props: LabelTaskEntityProps): LabelTaskEntity {
+  static create(id: EntityID, props: LabelTaskEntityProps): LabelTaskEntity {
     return new LabelTaskEntity(id, props);
   }
 }

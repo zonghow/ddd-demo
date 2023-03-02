@@ -1,5 +1,5 @@
-import { AggregateRoot } from '../../shared/AggregateRoot';
-import { EntityID } from '../../shared/Entity';
+import { AggregateRoot } from '../../shared/core/AggregateRoot';
+import { EntityID } from '../../shared/core/Entity';
 
 interface LabelAggregateRootProps {}
 

@@ -1,9 +1,9 @@
-import { EntityId } from '../../shared/Entity';
-import { UseCase } from '../../shared/UseCase';
+import { EntityID } from '../../shared/core/Entity';
+import { UseCase } from '../../shared/core/UseCase';
 import { LabelTaskRepository } from '../repository/LabelTaskRepository';
 
 export interface RerunLabelTaskUseCaseReqDTO {
-  labelId: EntityId;
+  labelId: EntityID;
   partitionDateList: string[];
 }
 

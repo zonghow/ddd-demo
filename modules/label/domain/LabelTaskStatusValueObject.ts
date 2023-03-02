@@ -1,4 +1,4 @@
-import { ValueObject } from '../../shared/ValueObject';
+import { ValueObject } from '../../shared/core/ValueObject';
 
 export type LabelTaskStatus =
   | 'NotStartedYet'

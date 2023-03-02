@@ -1,5 +1,5 @@
 import { Message } from '@arco-design/web-react';
-import { flatten, toArray } from 'lodash';
+import { flatten } from 'lodash';
 import { makeAutoObservable } from 'mobx';
 import {
   ListLabelTaskUseCase,

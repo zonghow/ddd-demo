@@ -1,13 +1,13 @@
 import { mock } from '../../../http';
 import { GetTaskInfoRes } from '../../../http/mock/GetTaskInfoRes';
-import { EntityID } from '../../shared/Entity';
+import { EntityID } from '../../shared/core/Entity';
+import { TimeValueObject } from '../../shared/TimeValueObject';
 import { LabelTaskEntity } from '../domain/LabelTaskEntity';
 import {
   LabelTaskStatusValueObject,
   LabelTaskStatusValueObjectProps,
 } from '../domain/LabelTaskStatusValueObject';
 import { LabelTaskStepCostValueObject } from '../domain/LabelTaskStepCostValueObject';
-import { TimeValueObject } from '../domain/TimeValueObject';
 
 export class LabelTaskRepository {
   async pagingListTask(options: any): Promise<{

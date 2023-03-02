@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { ValueObject } from '../../shared/ValueObject';
+import { ValueObject } from './core/ValueObject';
 
 interface TimeValueObjectProps {
   time: dayjs.ConfigType;

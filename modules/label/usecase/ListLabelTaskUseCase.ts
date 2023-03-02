@@ -1,7 +1,7 @@
-import { EntityId } from '../../shared/Entity';
-import { UseCase } from '../../shared/UseCase';
+import { EntityID } from '../../shared/core/Entity';
+import { UseCase } from '../../shared/core/UseCase';
+import { TimeValueObject } from '../../shared/TimeValueObject';
 import { LabelTaskStatus } from '../domain/LabelTaskStatusValueObject';
-import { TimeValueObject } from '../domain/TimeValueObject';
 import { LabelTaskRepository } from '../repository/LabelTaskRepository';
 
 export interface ListLabelTaskUseCaseReqDto {
@@ -23,7 +23,7 @@ export interface ListLabelTaskUseCaseResDto {
     endTime?: string;
     upstreamReadyTime?: string;
     errMsg: string;
-    instanceId: EntityId;
+    instanceId: EntityID;
     status: LabelTaskStatus;
     statusText: string;
     isNotStartedYet: boolean;
